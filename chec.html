@@ -134,11 +134,11 @@ button { padding:25px 55px;font-size:40px;border:none;border-radius:90px;cursor:
 <script>
 let prizes = {
   "Drink Coupon":0,
-  "Food Coupon":40,
+  "Food Coupon":0,
   "Knorr Shell Box":10,
   "Vaseline Sample":34,
-  "KMF Sachet":10,
-  "CMP Docket":10
+  "KMF Sachet":14,
+  "CMP Docket":14
 };
 
 let selectedCards=[], matchedPairs=0, countdown=20, countdownInterval;
@@ -208,7 +208,7 @@ function checkMatch(){
 }
 
 function startCountdown(){
-  countdown=20;
+  countdown=15;
   document.getElementById('countdown').innerText=countdown;
   countdownInterval=setInterval(()=>{
     countdown--;
